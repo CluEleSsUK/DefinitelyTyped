@@ -389,6 +389,11 @@ declare namespace ReactSelectClass {
         isValidNewOption?: (arg: { label: string }) => boolean;
 
         /**
+         * new option click handler, it calls when new option has been selected. function(option) {}
+         */
+        onNewOptionClick?: (arg: {label: string, labelKey: string, valueKey: string }) => Option;
+        
+        /**
          * factory to create new options
          */
         newOptionCreator?: (arg: { label: string, labelKey: string, valueKey: string }) => Option;
